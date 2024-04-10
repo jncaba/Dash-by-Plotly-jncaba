@@ -1,0 +1,11 @@
+nidaqmx==0.8.0
+h5py==2.10.0
+pyvisa==1.12.0
+matplotlib==3.5.3
+npTDMS==1.0.0
+dash==2.15.0
+pandas==1.3.5
+plotly==5.18.0
+dash_bootstrap_components==1.5.0
+dash_bootstrap_templates==1.1.2
+dash_ag_grid==31.0.1
