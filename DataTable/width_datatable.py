@@ -1,5 +1,5 @@
 import dash      #(version 1.9.1) pip install dash==1.9.1
-import dash_table
+from dash import dash_table
 import pandas as pd
 from collections import OrderedDict
 

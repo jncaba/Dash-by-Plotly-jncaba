@@ -7,7 +7,7 @@ import plotly.express as px
 import pandas as pd                                         # pip install pandas
 from datetime import datetime
 
-ticker_list = pd.read_csv('https://raw.githubusercontent.com/Coding-with-Adam/Dash-by-Plotly/master/Dash_More_Advanced_Shit/Email_Alerts/technology_stocks.csv')
+ticker_list = pd.read_csv(r'C:\Users\alta-tension\Documents\python\Dash-by-Plotly-jncaba\Dash_More_Advanced_Stuff\Email_Alerts\technology_stocks.csv')
 
 # Thank you to YouTube user @ClarityCoders for this function.
 def send_alert(subject, body, to):

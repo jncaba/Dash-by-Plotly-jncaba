@@ -2,9 +2,9 @@ import pandas as pd
 import plotly.express as px
 
 import dash
-import dash_table
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dash_table
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output
 import dash_auth
 
@@ -19,7 +19,7 @@ auth = dash_auth.BasicAuth(
 
 # ---------------------------------------------------------------
 # Taken from https://www.ecdc.europa.eu/en/geographical-distribution-2019-ncov-cases
-df = pd.read_csv("COVID-19-geographic-disbtribution-worldwide-2020-03-29.csv")
+df = pd.read_csv("Deploy_App_to_Web\COVID-19-geographic-disbtribution-worldwide-2020-03-29.csv")
 
 dff = df.groupby('countriesAndTerritories', as_index=False)[['deaths','cases']].sum()
 print(dff[:5])

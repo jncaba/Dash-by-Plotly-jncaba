@@ -7,7 +7,7 @@ from .side_bar import sidebar
 
 dash.register_page(__name__, title='App1', order=1)
 
-df = pd.read_csv('assets/Berlin_crimes.csv')
+df = pd.read_csv(r'Good_to_Know\resume\assets\Berlin_crimes.csv')
 
 def layout():
     return html.Div([

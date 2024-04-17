@@ -1,14 +1,14 @@
 import dash  # you need Dash version 1.15.0 or higher
 import dash_table
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 from dash.dependencies import Input, Output
 
 import pandas as pd
 import plotly.express as px
 from table_bars import data_bars
 
-df = pd.read_csv('medical supplies.csv')
+df = pd.read_csv(r'DataTable\Conditional_Formatting\medical supplies.csv')
 df["Part sent date"] = pd.to_datetime(df["Part sent date"]).dt.date
 df["Part received date"] = pd.to_datetime(df["Part received date"]).dt.date
 df['Prioritize'] = df['Machines'].apply(lambda x:

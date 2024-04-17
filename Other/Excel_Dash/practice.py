@@ -6,7 +6,7 @@ import dash_html_components as html
 from dash.dependencies import Output, Input
 
 
-df = pd.read_csv("vgsales.csv")
+df = pd.read_csv(r"Other\Excel_Dash\vgsales.csv")
 
 app = dash.Dash(__name__)
 

@@ -1,7 +1,7 @@
 import dash  # pip install dash
 import dash_bootstrap_components as dbc  # pip install dash-bootstrap-components
-import dash_html_components as html
-import dash_core_components as dcc
+from dash import html
+from dash import dcc
 import plotly.express as px
 from dash.dependencies import Input, Output
 import dash_extensions as de  # pip install dash-extensions

@@ -1,6 +1,6 @@
 import dash  # pip install dash==1.19.0 or higher
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Output, Input
 import dash_bootstrap_components as dbc
 
@@ -9,7 +9,7 @@ import pandas as pd
 import plotly.express as px
 from datetime import date
 
-df = pd.read_json('testing.json')
+df = pd.read_json(r'Dash_More_Advanced_Stuff\PowerBi-to-Dash\Bitcoin\testing.json')
 df = df.rename_axis('date').reset_index()
 df = df.iloc[:-2, :]  # drop last two rows
 df['number'] = range(1, len(df)+1)

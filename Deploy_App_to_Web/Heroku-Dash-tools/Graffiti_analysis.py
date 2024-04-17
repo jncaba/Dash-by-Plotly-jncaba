@@ -3,7 +3,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 
-df = pd.read_csv("Berlin_crimes.csv")
+df = pd.read_csv("Deploy_App_to_Web\Heroku-Dash-tools\Berlin_crimes.csv")
 
 app = Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 

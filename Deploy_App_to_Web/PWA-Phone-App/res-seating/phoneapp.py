@@ -4,7 +4,7 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import pandas as pd
 
-df = pd.read_csv('Open_Restaurant_Applications.csv')
+df = pd.read_csv(r'Deploy_App_to_Web\PWA-Phone-App\res-seating\Open_Restaurant_Applications.csv')
 
 dbc_css = "https://cdn.jsdelivr.net/gh/AnnMarieW/dash-bootstrap-templates@V1.0.4/dbc.min.css"
 app = Dash(__name__, external_stylesheets=[dbc.themes.VAPOR, dbc_css],

@@ -1,12 +1,12 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Output, Input
 import dash_bootstrap_components as dbc
 import pandas as pd
 import plotly.express as px
 
-df = pd.read_csv('politics.csv')
+df = pd.read_csv(r'Deploy_App_to_Web\PythonAnyWhere\politics.csv')
 #you can also read your data like this:
 # df = pd.read_csv('/home/charmingdata1/demo-app3/politics.csv')
 

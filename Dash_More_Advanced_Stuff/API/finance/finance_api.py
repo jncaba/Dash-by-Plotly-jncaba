@@ -3,8 +3,8 @@ import plotly
 import plotly.express as px
 
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 from dash.dependencies import Input, Output
 from dash.exceptions import PreventUpdate
 
@@ -14,7 +14,7 @@ from alpha_vantage.timeseries import TimeSeries
 #-------------------------------------------------------------------------------
 # Set up initial key and financial category
 
-key = '7FEDJMHY3CM2KPEC' # Your API Key
+key = 'PSQQ3N4A0DIGX0PO' # Your API Key
 # https://github.com/RomelTorres/alpha_vantage
 # Chose your output format or default to JSON (python dict)
 ts = TimeSeries(key, output_format='pandas') # 'pandas' or 'json' or 'csv'

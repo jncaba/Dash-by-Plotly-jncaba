@@ -1,14 +1,14 @@
 import dash  #(version 1.12.0)
 from dash.dependencies import Input, Output
 import dash_table
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 import plotly.express as px
 import pandas as pd
 
 # -------------------------------------------------------------------------------------
 # Import the cleaned data (importing csv into pandas)
-df = pd.read_csv("internet_cleaned.csv")
+df = pd.read_csv(r"DataTable\internet_cleaned.csv")
 df = df[df['year'] == 2019]
 
 # Creating an ID column name gives us more interactive capabilities

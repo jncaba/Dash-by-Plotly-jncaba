@@ -1,5 +1,5 @@
 import dash             #(version 1.11.0) pip install dash==1.11.0
-import dash_table
+from dash import dash_table
 import pandas as pd
 from collections import OrderedDict
 # (all code is from https://dash.plotly.com/datatable/style)
